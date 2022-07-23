@@ -26,6 +26,9 @@
 body {
     font-family: var(--space-mono-font);
 }
+::placeholder {
+    color: var(--grayish-cyan);
+}
 
 /* Header */
 header {
@@ -49,6 +52,10 @@ main {
 
 /*  OUTER CONTAINER */
 .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: var(--white);
@@ -79,14 +86,19 @@ label {
     border-radius: 5px;
 }
 
-input {
-    width: 2rem;
+.form-input{
+    width: 100%;
+    text-indent: 1rem;
+    margin: auto 0 auto 1rem;
+    height: 2rem;
     border: none;
+    outline: none;
     background-color: var(--very-light-grayish-cyan);
     color: var(--dark-cyan);
-    margin-left: auto;
     font-size: var(--form-input-font-size);
     font-weight: var(--fw-700);
+    text-align: end;
+    
 
 }
 
@@ -117,15 +129,20 @@ input {
 
 }
 
-input[id='custom'] {
+#custom {
     width: 45%;
     max-width: 15rem;
+    outline: none;
+    border: none;
     height: 3rem;
     font-size: var(--form-input-font-size);
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
-    
+    background-color: var(--very-light-grayish-cyan);
+    text-align: end;
+    color: var(--dark-cyan);
+    font-weight: var(--fw-700);
 }
 
 /* Output */
@@ -155,14 +172,12 @@ input[id='custom'] {
     display: inline-block;
     width: auto;
     font-size: var(--form-input-font-size);
+    font-weight: var(--fw-700);
     margin-left: auto;
     color: var(--strong-cyan);
 }
 
-.output img {
-    display: inline-block;
-    
-}
+
 
 
 /* RESET BUTTON */
@@ -192,6 +207,7 @@ input[id='custom'] {
     }
     .container {
         display: flex;
+        flex-direction: row;
         max-width: 80%;
         padding: 2rem;
         margin: 1rem auto;
@@ -209,6 +225,29 @@ input[id='custom'] {
         margin-bottom: 1rem;
     }
 }
+
+
+/*  ACTIVE STATES */
+.input-field:active {
+    border: 2px solid var(--strong-cyan);
+}
+.input-field:hover {
+    cursor: pointer;
+}
+.btn:active {
+    color: var(--dark-cyan);
+    background-color: var(--strong-cyan);
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+#custom:focus {
+    border: 1px solid var(--strong-cyan);
+}
+
+
+
 
 /* ATTRIBUTION */
 .attribution { font-size: 11px; text-align: center; }
