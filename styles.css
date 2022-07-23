@@ -1,0 +1,186 @@
+/*  VARIABLES    */
+:root {
+    /* Colors */
+    --strong-cyan: hsl(172, 67%, 45%);
+    --dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --form-input-font-size: 24px;
+
+    --space-mono-font: 'Space Mono',san-serif;
+    --fw-700: 700;
+}
+/*                      MOBILE FIRST WORKFLOW                */
+
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--space-mono-font);
+}
+
+/* Header */
+header {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: var(--light-grayish-cyan);
+   padding: 1rem;
+}
+
+.logo-container {
+    margin: 1rem;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    background-color: var(--light-grayish-cyan);
+}
+
+/*  OUTER CONTAINER */
+.container {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+/* FORM */
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+/* All form headings */
+.heading {
+    font-size: 15px;
+    color: var(--dark-grayish-cyan);
+}
+
+.input-field {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: var(--very-light-grayish-cyan);
+    padding: 0.5rem;
+    margin: 0rem 1px 0.5rem;
+    border-radius: 5px;
+}
+
+input {
+    width: 1rem;
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--dark-cyan);
+    margin-left: auto;
+    font-size: var(--form-input-font-size);
+    font-weight: var(--fw-700);
+
+}
+
+/* Placing the dollar sign inside the input field  */
+.icon {
+    position: absolute;
+}
+
+
+/* Tip Buttons Section */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn {
+    width: 45%;
+    max-width: 15rem;
+    height: 3rem;
+    text-align: center;
+    font-size: var(--form-input-font-size);
+    font-weight: var(--fw-700);
+    margin: 0.5rem;
+    padding: 0.2rem;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+
+}
+
+input[id='custom'] {
+    width: 45%;
+    max-width: 15rem;
+    height: 3rem;
+    font-size: var(--form-input-font-size);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Output */
+.output-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 1rem;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border-radius: 15px;
+
+}
+.output-section {
+    margin-bottom: 1rem;
+    display: flex;
+}
+.output-section p {
+    font-weight: var(--fw-700);
+}
+
+.per-person {
+    color: var(--grayish-cyan);
+}
+
+.output {
+    display: inline-block;
+    width: auto;
+    font-size: var(--form-input-font-size);
+    margin-left: auto;
+    color: var(--strong-cyan);
+}
+
+.output img {
+    display: inline-block;
+    
+}
+
+
+/* RESET BUTTON */
+#reset {
+    width: 100%;
+    max-width: 300px;
+    height: 3rem;
+    font-size: var(--form-input-font-size);
+    font-weight: var(--fw-700);
+    color: var(--dark-cyan);
+    background-color: var(--strong-cyan);
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.5rem;
+    align-self: center;
+    
+}
+
+
+/* ATTRIBUTION */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
