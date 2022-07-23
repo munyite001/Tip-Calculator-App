@@ -80,7 +80,7 @@ label {
 }
 
 input {
-    width: 1rem;
+    width: 2rem;
     border: none;
     background-color: var(--very-light-grayish-cyan);
     color: var(--dark-cyan);
@@ -125,6 +125,7 @@ input[id='custom'] {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
+    
 }
 
 /* Output */
@@ -166,8 +167,8 @@ input[id='custom'] {
 
 /* RESET BUTTON */
 #reset {
+    text-align: center;
     width: 100%;
-    max-width: 300px;
     height: 3rem;
     font-size: var(--form-input-font-size);
     font-weight: var(--fw-700);
@@ -180,6 +181,34 @@ input[id='custom'] {
     
 }
 
+/* DESKTOP DESIGNS */
+@media (min-width: 750px)
+{
+    body {
+        background-color: var(--light-grayish-cyan);
+    }
+    main {
+        padding: 1rem;
+    }
+    .container {
+        display: flex;
+        max-width: 80%;
+        padding: 2rem;
+        margin: 1rem auto;
+        border-radius: 15px;
+    }
+
+    .output-container {
+        padding-top: 2rem;
+        margin-left: 1rem;
+        width: 500px;
+    }
+
+    #reset {
+        margin-top: auto;
+        margin-bottom: 1rem;
+    }
+}
 
 /* ATTRIBUTION */
 .attribution { font-size: 11px; text-align: center; }
