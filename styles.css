@@ -2,6 +2,8 @@
 :root {
     /* Colors */
     --strong-cyan: hsl(172, 67%, 45%);
+    --very-strong-cyan: hsl(172, 70%, 70%);
+    --dull-cyan: hsl(183, 100%, 20%);
     --dark-cyan: hsl(183, 100%, 15%);
     --dark-grayish-cyan: hsl(186, 14%, 43%);
     --grayish-cyan: hsl(184, 14%, 56%);
@@ -240,6 +242,18 @@ label {
 }
 .btn:hover {
     cursor: pointer;
+}
+#reset:enabled {
+    background-color: var(--strong-cyan);
+}
+
+#reset:active {
+    background-color: var(--very-strong-cyan);
+    cursor: pointer;
+}
+
+#reset:disabled {
+    background-color: var(--dull-cyan);
 }
 
 #custom:focus {
