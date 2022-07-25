@@ -130,6 +130,11 @@ label {
     border-radius: 5px;
 
 }
+.active-btn 
+{
+    color: var(--dark-cyan);
+    background-color: var(--strong-cyan);
+}
 
 #custom {
     width: 45%;
@@ -236,13 +241,11 @@ label {
 .input-field:hover {
     cursor: pointer;
 }
-.btn:active {
+.btn:hover {
     color: var(--dark-cyan);
     background-color: var(--strong-cyan);
 }
-.btn:hover {
-    cursor: pointer;
-}
+
 #reset:enabled {
     background-color: var(--strong-cyan);
 }
