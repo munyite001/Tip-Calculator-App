@@ -23,7 +23,7 @@ function setBill()
 people.addEventListener('input',setPeople);
 
 
-let numPeople = 0;
+let numPeople = 0.0;
 
 function setPeople()
 {
