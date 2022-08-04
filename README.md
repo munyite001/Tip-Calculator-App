@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Github Repo: [Github](https://munyite001/Tip-Calculator-App)
-- Live Site URL: [Netlify](https://tip-calculator-app-fm.netlify.app)
+- Live Site URL: [Netlify](https://tip-calculator-app-frm.netlify.app)
 
 ## My process
 As always, I work with a mobile first workflow
